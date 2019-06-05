@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 4.5rem;
+  font-family: "Varela Round", sans-serif;
+}
+
+p {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.75rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: justify;
+}
+
+/*-------------MENU--------------*/
+
+.menu-icon {
+  z-index: 3;
+  border: 1px solid rgba(70, 192, 196, 0.9);
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  font-size: 2rem;
+  background-color: #262c42;
+  color: #46c0c4;
+  padding: 2%;
+}
+
+menu {
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(70, 192, 196, 0.9);
+  color: #262c42;
+  font-size: 4rem;
+  display: none;
+  position: fixed;
+  text-align: center;
+}
+
+menu ul {
+  list-style-type: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*--------------START------------*/
+
+.start {
+  font-family: "Varela Round", sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #262c42 50%, #525d87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.start h1 {
+  color: #46c0c4;
+  font-size: 10rem;
+}
+
+.start h3 {
+  font-size: 4.5rem;
+  padding-top: 5%;
+}
+
+#arrow {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  padding-top: 5%;
+  text-align: center;
+}
+
+#arrowtext {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #46c0c4;
+  animation: arrow 3s infinite linear;
+}
+
+/*--------------OFERTA------------*/
+
+.offer {
+  background-image: linear-gradient(
+    to top right,
+    #262c42 50%,
+    /*94e895*/ #525d87
+  );
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Varela Round", sans-serif;
+  padding-bottom: 5%;
+}
+
+.offer h3 {
+  width: 80%;
+  /*display: block;*/
+  border-bottom: #626a87 solid 3px;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  margin-bottom: 5%;
+  color: #46c0c4;
+}
+
+/*-------------O NAS--------------*/
+
+.about {
+  background-image: linear-gradient(to bottom, #262c42 30%, /*94e895*/ #4b4b66);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about h3 {
+  font-size: 2.5rem;
+  font-family: "Varela Round", sans-serif;
+  padding-top: 2%;
+  color: #46c0c4;
+}
+
+/*-----------KONTAKT----------*/
+
+.contact {
+  background-image: linear-gradient(to bottom, #4b4b66 50%, /*94e895*/ #67678c);
+  padding-top: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact content {
+  width: 100%;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.contact h3 {
+  font-size: 2rem;
+  font-family: "Varela Round", sans-serif;
+}
+
+.contact .map {
+  width: 100%;
+}
+
+.contact iframe {
+  width: 100%;
+  height: 50vh;
+}
+
+/*--------------FOOTER----------*/
+
+footer {
+  background-color: #262c42;
+  font-size: 1.5rem;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+}
+
+/*----------MEDIA QUERIES----------*/
+
+@media only screen and (min-width: 320px) {
+  .offer h3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .offer,
+  .about h3 {
+    font-size: 3rem;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  .offer h3 {
+    font-size: 3rem;
+    padding-top: 2%;
+    margin-bottom: 2%;
+  }
+  .about h3 {
+    font-size: 3rem;
+  }
+  .start h1 {
+    font-size: 15rem;
+  }
+  .menu-icon {
+    padding: 1%;
+  }
+  .contact h3 {
+    padding-bottom: 2%;
+  }
+  .contact content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact .map {
+    width: 50%;
+  }
+  .contact p {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  p {
+    font-size: 2.3rem;
+  }
+  .menu-icon {
+    transition: 0.5s;
+    top: 2%;
+    right: 2%;
+  }
+  .menu-icon:hover {
+    cursor: pointer;
+    background-color: #525270;
+  }
+  menu li:hover {
+    cursor: pointer;
+  }
+  .start h1 {
+    font-size: 17rem;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}
+
+/*-----------------ANIMACJE-------------------*/
+
+@keyframes arrow {
+  100% {
+    transform: translateY(120px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  0% {
+    transform: translateY(-150px);
+  }
+}
