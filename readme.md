@@ -1,12 +1,6 @@
 # One page website
 Website made in 2018.
 
-## General info
-Add more general information about project. What the purpose of the project is? Motivation?
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-
 ## Technologies
 * HTML
 * CSS
